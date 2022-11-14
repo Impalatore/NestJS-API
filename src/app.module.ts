@@ -7,9 +7,8 @@ import { MongooseModule } from "@nestjs/mongoose";
 @Module({
   imports: [
     ProductModule,
-    MongooseModule.forRoot('mongodb://localhost:27017', {
-      useNewUrlParser: true
-    })],
+    MongooseModule.forRoot('mongodb://localhost/nestjs-api')
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
